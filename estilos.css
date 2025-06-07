@@ -1,47 +1,121 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f0faf6;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fbf8;
   color: #333;
 }
 
-.tarjeta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 16px;
+header {
+  background-color: #a7e9c4;
+  padding: 40px 20px;
+  text-align: center;
+  color: #055d4f;
 }
 
-.texto {
-  flex: 1 1 55%;
-  padding: 20px;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-.texto h1 {
-  margin: 0 0 10px;
-  color: #2e7d66;
-}
-
-.texto h2 {
-  margin: 0 0 20px;
-  color: #4caf81;
+header h2 {
+  margin: 10px 0 0;
   font-weight: normal;
 }
 
-.foto {
+.presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.presentacion .texto {
+  flex: 1 1 60%;
+  padding: 20px;
+}
+
+.presentacion .imagen {
   flex: 1 1 40%;
   text-align: center;
 }
 
-.foto img {
+.presentacion .imagen img {
   max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.seccion {
+  padding: 40px 30px;
+  margin: 20px 0;
+}
+
+.experiencia {
+  background-color: #e0f7ec;
+}
+
+.habilidades {
+  background-color: #d3f9e7;
+}
+
+.testimonios {
+  background-color: #fefefe;
+}
+
+h3 {
+  color: #2b7a66;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #4caf81;
+  font-weight: bold;
+}
+
+.galeria {
+  padding: 40px 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.galeria .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 4px solid #4caf81;
+}
+
+cite {
+  display: block;
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: #a7e9c4;
+  color: #055d4f;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
 }
